@@ -15,16 +15,18 @@ function App() {
   return (
     <div className="App">
       <TodoForm text={text} setText={setText} className="todoForm" todoLists={todoLists} setTodoLists={setTodoLists} />
-      {todoLists.map((item) => {
-        return (
-          <div className="listItems" key={item.id}>
-            <p>{item.todoName}</p>
-            <button onClick={() => removeText(item.id)}>
-              <BiSolidTrashAlt />
-            </button>
-          </div>
-        );
-      })}
+      <div className="todoListItems">
+        {todoLists.map((item) => {
+          return (
+            <div className="listItems" key={item.id}>
+              <p>{item.todoName}</p>
+              <button onClick={() => removeText(item.id)}>
+                <BiSolidTrashAlt />
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

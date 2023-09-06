@@ -14,7 +14,16 @@
   gap: 2rem;
 }
 
-.App .listItems {
+.App .todoListItems {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.App .todoListItems .listItems {
   width: 25rem;
   height: 5rem;
   padding: 1.5rem;
@@ -25,12 +34,12 @@
   align-items: center;
 }
 
-.App .listItems p {
+.App .todoListItems .listItems p {
   flex: 60%;
   font-size: 18px;
 }
 
-.App .listItems button {
+.App .todoListItems .listItems button {
   flex: 40%;
   width: fit-content;
   display: flex;
@@ -42,12 +51,12 @@
   cursor: pointer;
 }
 
-.App .listItems button:hover {
+.App .todoListItems .listItems button:hover {
   color: #36b11d;
   transition: all 0.1s ease-in;
 }
 
-.App .listItems button svg {
+.App .todoListItems .listItems button svg {
   font-size: 22px;
 }
 
@@ -90,4 +99,24 @@
   background-color: white;
   color: #42cc27;
   transition: all 0.15s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .todoForm {
+    padding: 0 5%;
+  }
+
+  .App .listItems {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App .todoListItems {
+    padding: 0 5%;
+  }
+
+  .App .todoListItems .listItems {
+    width: 100%;
+  }
 }
