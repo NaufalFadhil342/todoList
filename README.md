@@ -23,4 +23,4 @@ Tech stack:
   - Git
   - Github
 
-NOTE: Ada beberapa yang di Update yaitu: - Variable addText di todoForm.jsx - Remove handler di App.jsx - Jika ada text atau todo yang sama ada peringatan menggunakan alert
+NOTE: Ada beberapa yang di Update yaitu: - Add text handler di todoForm.jsx - Remove handler di App.jsx - Jika ada text atau todo yang sama ada peringatan menggunakan alert
